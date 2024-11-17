@@ -1,5 +1,5 @@
 import { type Assertion, describe, expect, it } from 'vitest';
-import zodiac, { ANIMALS } from '../src';
+import { ANIMALS, zodiac } from '../src';
 
 type Options = { input: Date; expected: any; validator: keyof Assertion };
 const expectFunction = (input?: unknown): Assertion => expect(zodiac(input as Date));

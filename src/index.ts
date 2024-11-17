@@ -1,3 +1,3 @@
 export * from './constants';
 export * from './types';
-export { default } from './zodiac';
+export { default as zodiac } from './zodiac';
