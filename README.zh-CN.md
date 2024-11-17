@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>lunar-date-fns</h1>
+<h1>zodiac-animals</h1>
 
 🐼 一个 JavaScript 生肖实用程序库
 
