@@ -54,7 +54,7 @@ export const ANIMALS = [
     {
         name: 'dog',
         mate: ['tiger', 'horse'],
-        trait: ['Loyal', 'Sociable', 'Courageous', 'Diligent', 'Steady', 'Lively', 'Adaptable', 'Smart'],
+        traits: ['Loyal', 'Sociable', 'Courageous', 'Diligent', 'Steady', 'Lively', 'Adaptable', 'Smart'],
     },
     {
         name: 'pig',
