@@ -62,13 +62,14 @@ Contributions via Pull Requests or [Issues][issues-url] are welcome.
 
 This project is licensed under the MIT License. See the [LICENSE][license-url] file for details.
 
+
 [node-image]: https://img.shields.io/node/v/%40kabeep%2Fzodiac-animals?color=lightseagreen
 [node-url]: https://nodejs.org/docs/latest/api/
 [npm-image]: https://img.shields.io/npm/d18m/%40kabeep%2Fzodiac-animals?color=cornflowerblue
 [npm-url]: https://www.npmjs.com/package/@kabeep/zodiac-animals
 [codecov-image]: https://codecov.io/gh/kabeep/zodiac-animals/graph/badge.svg?token=SN18SFJw3N
 [codecov-url]: https://codecov.io/gh/kabeep/zodiac-animals
-[codacy-image]: https://app.codacy.com/project/badge/Grade/2004f81266e04420ba10c8bc0f966e18
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f9ecd4622c104d4eb0d6f1a5e289e8fe
 [codacy-url]: https://app.codacy.com/gh/kabeep/zodiac-animals/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
 [circleci-image]: https://dl.circleci.com/status-badge/img/gh/kabeep/zodiac-animals/tree/master.svg?style=shield
 [circleci-url]: https://dl.circleci.com/status-badge/redirect/gh/kabeep/zodiac-animals/tree/master
