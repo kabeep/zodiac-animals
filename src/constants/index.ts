@@ -1,3 +1,7 @@
+/**
+ * The data comes from `davisnatalie`
+ * @see [zodiacAnimals2]{@link https://github.com/davisnatalie/zodiacAnimals2/blob/main/js/zodiac-animals-data.js}
+ */
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export const ANIMALS = [
     {

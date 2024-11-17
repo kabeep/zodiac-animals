@@ -3,6 +3,29 @@ import { ANIMALS } from './constants';
 import type { Zodiac } from './types';
 import { getDecemberDays, normalize } from './utils';
 
+/**
+ * Determines the zodiac information for a given Gregorian date
+ * @param {Date} date - A Gregorian date
+ * @returns {Zodiac | -1} Zodiac information or -1 if the date cannot be converted to a lunar date
+ *
+ * @example
+ * // => {
+ * //    name: 'ox',
+ * //    mate: [ 'snake', 'rooster' ],
+ * //    traits: ['Loyal','Reliable','Thorough','Strong','Reasonable','Steady','Determined'],
+ * //    year: 1997,
+ * //    month: 3,
+ * //    day: 10,
+ * //    isLeapMonth: false,
+ * //    from: 1997-02-06T16:00:00.000Z,
+ * //    to: 1998-01-26T16:00:00.000
+ * // }
+ * zodiac(new Date(1997, 4, 8))
+ *
+ * @example
+ * // => -1
+ * zodiac(new Date('1899-12-31'))
+ */
 function zodiac(date: Date): Zodiac | -1 {
     const lunarDate = toLunar(date);
     if (lunarDate === -1) return -1;
