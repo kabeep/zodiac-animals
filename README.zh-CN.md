@@ -41,17 +41,46 @@ pnpm add @kabeep/zodiac-animals
 
 ## 🚀 使用
 
-CommonJS
+#### CommonJS
 
-```javascript
-const zodiac = require('@kabeep/zodiac-animals');
+```typescript
+const { ANIMALS, zodiac, Zodiac } = require('@kabeep/zodiac-animals');
 ```
 
-ESModule
+#### ESModule
 
-```javascript
-import zodiac from '@kabeep/zodiac-animals';
+```typescript
+import { ANIMALS, zodiac, type Zodiac } from '@kabeep/zodiac-animals';
 ```
+
+---
+
+#### 函数: `zodiac(date)`
+
+```typescript
+zodiac(new Date()) as Zodiac;
+```
+
+| 参数     | 类型     | 可选 | 默认值 | 描述     |
+|--------|--------|:--:|-----|--------|
+| `date` | `Date` | No | -   | 公历日期对象 |
+
+#### 返回: `interface Zodiac`
+
+**Result Object:**
+
+| 属性            | 类型         |    必选     | 描述                                   |
+|---------------|------------|:---------:|--------------------------------------|
+| `name`        | `string`   |   true    | 生肖名称                                 |
+| `mate`        | `string[]` |   true    | 生肖配对                                 |
+| `traits`      | `string[]` |   true    | 生肖特征                                 |
+| `alias`       | `string`   | **false** | 生肖别名（文化差异）                           |
+| `year`        | `number`   |   true    | 输入日期的农历年                             |
+| `month`       | `number`   |   true    | 输入日期的农历月                             |
+| `day`         | `number`   |   true    | 输入日期的农历日                             |
+| `isLeapMonth` | `boolean`  |   true    | 输入日期是否是闰月                            |
+| `from`        | `Date`     |   true    | 农历年第一天的公历日期（发生错误时返回一个 Invalid Date）  |
+| `to`          | `Date`     |   true    | 农历年最后一天的公历日期（发生错误时返回一个 Invalid Date） |
 
 ## 🔗 关联库
 

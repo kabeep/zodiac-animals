@@ -42,17 +42,46 @@ pnpm add @kabeep/zodiac-animals
 
 ## 🚀 Usage
 
-CommonJS
+#### CommonJS
 
-```javascript
-const zodiac = require('@kabeep/zodiac-animals');
+```typescript
+const { ANIMALS, zodiac, Zodiac: IZodiac } = require('@kabeep/zodiac-animals');
 ```
 
-ESModule
+#### ESModule
 
-```javascript
-import zodiac from '@kabeep/zodiac-animals';
+```typescript
+import { ANIMALS, zodiac, type Zodiac } from '@kabeep/zodiac-animals';
 ```
+
+---
+
+#### Methods: `zodiac(date)`
+
+```typescript
+zodiac(new Date()) as Zodiac;
+```
+
+| Parameter | Type   | Optional | Default | Description                       |
+|-----------|--------|:--------:|---------|-----------------------------------|
+| `date`    | `Date` |    No    | -       | Date Object of Gregorian Calendar |
+
+#### Returns: `interface Zodiac`
+
+**Result Object:**
+
+| Key           | Type       | Required  | Description                                                                                       |
+|---------------|------------|:---------:|---------------------------------------------------------------------------------------------------|
+| `name`        | `string`   |   true    | Zodiac Animal Name                                                                                |
+| `mate`        | `string[]` |   true    | Zodiac Animal Mates                                                                               |
+| `traits`      | `string[]` |   true    | Zodiac Animal Traits                                                                              |
+| `alias`       | `string`   | **false** | Zodiac Animal i18n Alias                                                                          |
+| `year`        | `number`   |   true    | Lunar Year of Date Input                                                                          |
+| `month`       | `number`   |   true    | Lunar Month of Date Input                                                                         |
+| `day`         | `number`   |   true    | Lunar Day of Date Input                                                                           |
+| `isLeapMonth` | `boolean`  |   true    | Lunar Leap Month Flag of Date Input                                                               |
+| `from`        | `Date`     |   true    | Gregorian Date of the First Day of the Lunar Year (Return an Invalid Date if an Exception Occurs) |
+| `to`          | `Date`     |   true    | Gregorian Date of the Last Day of the Lunar Year (Return an Invalid Date if an Exception Occurs)  |
 
 ## 🔗 Related
 
