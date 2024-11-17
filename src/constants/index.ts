@@ -1,4 +1,4 @@
-export const ZODIAC_ANIMALS = [
+export const ANIMALS = [
     {
         name: 'rat',
         mate: ['dragon', 'monkey'],
@@ -18,6 +18,7 @@ export const ZODIAC_ANIMALS = [
         name: 'rabbit',
         mate: ['sheep', 'pig'],
         traits: ['Trustworthy', 'Empathic', 'Modest', 'Diplomatic', 'Sincere', 'Sociable', 'Caretakers'],
+        alias: 'cat', // Vietnamese
     },
     {
         name: 'dragon',
