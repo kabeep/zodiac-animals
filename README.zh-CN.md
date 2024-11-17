@@ -53,6 +53,15 @@ ESModule
 import zodiac from '@kabeep/zodiac-animals';
 ```
 
+## 🔗 关联库
+
+- [lunar-date-fns][lunar-date-fns-url] - 🗓️ 一个 JavaScript 农历日期的实用程序库。
+- [lunar-birthday-cli][lunar-birthday-cli-url] - 🎂 在终端中列出农历诞辰的 Node.js 库。
+
+## 🏅 致谢
+
+- [zodiacAnimals2][credits-url] - 参考了这个存储库的数据设计。
+
 ## 🤝 贡献
 
 欢迎通过 Pull Requests 或 [Issues](https://github.com/kabeep/lunar-date-fns/issues) 来贡献你的想法和代码。
@@ -64,18 +73,31 @@ import zodiac from '@kabeep/zodiac-animals';
 
 [node-image]: https://img.shields.io/node/v/%40kabeep%2Fzodiac-animals?color=lightseagreen
 [node-url]: https://nodejs.org/docs/latest/api/
+
 [npm-image]: https://img.shields.io/npm/d18m/%40kabeep%2Fzodiac-animals?color=cornflowerblue
 [npm-url]: https://www.npmjs.com/package/@kabeep/zodiac-animals
+
 [codecov-image]: https://codecov.io/gh/kabeep/zodiac-animals/graph/badge.svg?token=SN18SFJw3N
 [codecov-url]: https://codecov.io/gh/kabeep/zodiac-animals
+
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f9ecd4622c104d4eb0d6f1a5e289e8fe
 [codacy-url]: https://app.codacy.com/gh/kabeep/zodiac-animals/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+
 [circleci-image]: https://dl.circleci.com/status-badge/img/gh/kabeep/zodiac-animals/tree/master.svg?style=shield
 [circleci-url]: https://dl.circleci.com/status-badge/redirect/gh/kabeep/zodiac-animals/tree/master
+
 [insights-url]: https://repobeats.axiom.co/api/embed/587b7e5e404afd72869d684be271f8ca28f350ef.svg "Repobeats analytics image"
+
 [docs-url]: https://kabeep.github.io/zodiac-animals
 [issues-url]: https://github.com/kabeep/zodiac-animals/issues
+
 [license-image]: https://img.shields.io/github/license/kabeep/zodiac-animals?color=slateblue
 [license-url]: LICENSE
+
 [en-us-url]: README.md
 [zh-cn-url]: README.zh-CN.md
+
+[lunar-date-fns-url]: https://github.com/kabeep/lunar-date-fns
+[lunar-birthday-cli-url]: https://github.com/kabeep/lunar-birthday-cli
+[credits-url]: https://github.com/davisnatalie/zodiacAnimals2
+
