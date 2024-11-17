@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ANIMALS = [
     {
         name: 'rat',
@@ -60,4 +61,4 @@ export const ANIMALS = [
         mate: ['rabbit', 'sheep'],
         traits: ['Honorable', 'Philanthropic', 'Determined', 'Optimistic', 'Sincere', 'Sociable'],
     },
-];
+] as const;
