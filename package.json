@@ -39,9 +39,9 @@
         "docs": "npm run build && typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
     },
     "author": "Zhang Zixin (kabeep)",
-    "homepage": "https://github.com/kabeep/lunar-date-fns#readme",
-    "repository": "git@github.com:kabeep/lunar-date-fns.git",
-    "bugs": "https://github.com/kabeep/lunar-date-fns/issue",
+    "homepage": "https://github.com/kabeep/zodiac-animals#readme",
+    "repository": "git@github.com:kabeep/zodiac-animals.git",
+    "bugs": "https://github.com/kabeep/zodiac-animals/issue",
     "devDependencies": {
         "@size-limit/esbuild": "^11.1.6",
         "@size-limit/file": "^11.1.6",
