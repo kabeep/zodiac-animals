@@ -49,9 +49,16 @@
   --color-scheme: var(--md-sys-color-scheme); */
 
   --top-app-bar-height: 4.5rem;
-  --top-app-bar-padding-vertical: 8px;
-  --top-app-bar-search-icon-width: 60px;
+  --top-app-bar-padding-vertical: .5rem;
+  --top-app-bar-table-cell-padding-left: 1.5rem;
+  --top-app-bar-search-icon-width: 4rem;
+  --top-app-bar-search-padding-inset: 1.5rem;
+  --top-app-bar-search-padding-inset-mobile: 1rem;
+  --top-app-bar-search-font-size: 1.125rem;
+  --top-app-bar-search-font-size-mobile: 1rem;
   --footer-height: 3.5rem;
+
+  --safe-area-inset-top: env(safe-area-inset-top);
 }
 
 body {
@@ -133,7 +140,7 @@ img {
 }
 .tsd-page-toolbar .table-cell {
   height: 56px;
-  margin-left: 1.5rem;
+  padding-left: var(--top-app-bar-table-cell-padding-left);
 }
 .tsd-page-toolbar .tsd-toolbar-icon {
   padding: 20px 0;
@@ -145,7 +152,9 @@ img {
   line-height: 56px;
   border-radius: 22px;
   padding-right: var(--top-app-bar-search-icon-width);
-  max-width: calc(100% - var(--top-app-bar-search-icon-width));
+  box-sizing: border-box;
+  padding-left: 0;
+  margin-left: var(--top-app-bar-table-cell-padding-left);
 }
 #tsd-search .field,
 #tsd-search .field label,
@@ -178,14 +187,15 @@ img {
 #tsd-search .field .tsd-toolbar-icon {
   display: flex;
   justify-content: center;
+  flex: none;
 }
 #tsd-search .field .tsd-widget.no-caption {
   width: var(--top-app-bar-search-icon-width);
 }
 #tsd-search .field input {
-  padding: 24px;
-  font-size: 1.175rem;
-  top: calc(-100% - var(--top-app-bar-padding-vertical));
+  padding: var(--top-app-bar-search-padding-inset);
+  font-size: var(--top-app-bar-search-font-size);
+  top: calc(-100% - var(--top-app-bar-padding-vertical) - var(--safe-area-inset-top));
 }
 #tsd-search .results {
   z-index: -1;
@@ -253,10 +263,10 @@ img {
 .tsd-navigation .tsd-accordion-summary {
   width: 100%;
 }
+.tsd-accordion .tsd-accordion-summary > svg,
 .tsd-index-accordion .tsd-accordion-summary > svg {
   position: absolute;
   right: 1.5rem;
-  margin-top: 1rem;
 }
 .tsd-accordion-summary .tsd-kind-icon ~ span {
   margin-right: 2.5rem;
@@ -281,6 +291,13 @@ img {
 }
 
 @media (max-width: 769px) {
+  #tsd-search {
+    max-width: calc(100% - var(--top-app-bar-search-icon-width) - var(--top-app-bar-table-cell-padding-left));
+  }
+  #tsd-search .field input {
+    font-size: var(--top-app-bar-search-font-size);
+    padding: var(--top-app-bar-search-padding-inset-mobile);
+  }
   .container {
     padding: 1rem;
   }
@@ -301,6 +318,9 @@ img {
   .site-menu {
     max-height: calc(100vh - var(--footer-height) - var(--top-app-bar-height));
     top: var(--top-app-bar-height);
+  }
+  .site-menu {
+    margin-top: 0;
   }
   .page-menu {
     margin-left: 1rem;
