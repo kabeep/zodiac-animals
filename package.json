@@ -1,7 +1,7 @@
 {
     "name": "@kabeep/zodiac-animals",
     "description": "A JavaScript zodiac animals utility library",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
