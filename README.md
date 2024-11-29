@@ -22,7 +22,7 @@ English | [简体中文][zh-cn-url]
 > Considering tree-shaking and the rigor required due to cultural differences,
 > the output will exclude i18n content.
 
-A lite and zero-dependency utility library using Lunar Calendar.
+A lite utility library using Lunar Calendar.
 
 See [documentation][docs-url].
 
