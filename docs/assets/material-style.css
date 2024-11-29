@@ -50,7 +50,7 @@
 
   --top-app-bar-height: 4.5rem;
   --top-app-bar-padding-vertical: .5rem;
-  --top-app-bar-table-cell-padding-left: 1.5rem;
+  --top-app-bar-table-cell-gutter: 1.5rem;
   --top-app-bar-search-icon-width: 4rem;
   --top-app-bar-search-padding-inset: 1.5rem;
   --top-app-bar-search-padding-inset-mobile: 1rem;
@@ -129,6 +129,9 @@ img {
   text-overflow: ellipsis;
   font-size: 22px;
 }
+.tsd-page-title {
+  word-break: break-all;
+}
 .tsd-page-toolbar {
   padding: var(--top-app-bar-padding-vertical) 0;
   height: calc(var(--top-app-bar-height) - 16px);
@@ -140,7 +143,7 @@ img {
 }
 .tsd-page-toolbar .table-cell {
   height: 56px;
-  padding-left: var(--top-app-bar-table-cell-padding-left);
+  padding-left: var(--top-app-bar-table-cell-gutter);
 }
 .tsd-page-toolbar .tsd-toolbar-icon {
   padding: 20px 0;
@@ -154,7 +157,8 @@ img {
   padding-right: var(--top-app-bar-search-icon-width);
   box-sizing: border-box;
   padding-left: 0;
-  margin-left: var(--top-app-bar-table-cell-padding-left);
+  margin-left: var(--top-app-bar-table-cell-gutter);
+  max-width: calc(100% - var(--top-app-bar-table-cell-gutter) - var(--top-app-bar-table-cell-gutter));
 }
 #tsd-search .field,
 #tsd-search .field label,
@@ -292,7 +296,7 @@ img {
 
 @media (max-width: 769px) {
   #tsd-search {
-    max-width: calc(100% - var(--top-app-bar-search-icon-width) - var(--top-app-bar-table-cell-padding-left));
+    max-width: calc(100% - var(--top-app-bar-search-icon-width) - var(--top-app-bar-table-cell-gutter));
   }
   #tsd-search .field input {
     font-size: var(--top-app-bar-search-font-size);
