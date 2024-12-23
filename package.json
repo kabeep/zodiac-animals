@@ -63,7 +63,7 @@
         "typedoc-plugin-ga": "^1.0.4",
         "typedoc-plugin-include-example": "^1.4.1",
         "typedoc-plugin-inline-sources": "^1.1.0",
-        "typedoc-plugin-mdn-links": "^3.3.8",
+        "typedoc-plugin-mdn-links": "^4.0.6",
         "typedoc-plugin-missing-exports": "^3.0.0",
         "typedoc-plugin-rename-documents": "^1.0.0",
         "typedoc-plugin-replace-text": "^4.0.0",
